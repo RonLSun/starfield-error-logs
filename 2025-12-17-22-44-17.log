@@ -1,0 +1,1362 @@
+Starfield v1.15.222
+trainwreck v1.4.0
+
+Unhandled exception "EXCEPTION_ACCESS_VIOLATION" at 0x7FF63872E83A Starfield.exe+2B6E83A
+
+SYSTEM SPECS:
+    OS: Microsoft Windows 11 专业版 22H2 22621.4317
+    CPU: GenuineIntel 11th Gen Intel(R) Core(TM) i7-11700K @ 3.60GHz
+    GPU #1: NVIDIA GeForce RTX 4070 Ti
+    GPU #2: Microsoft Basic Render Driver
+    RAM: 18.94 GiB/31.90 GiB
+    PAGE FILE: 28.00 GiB/36.90 GiB
+
+PROBABLE CALL STACK:
+    [0 ] 0x7FF63872E83A Starfield.exe+2B6E83A
+        lock xadd [rdi+8],eax
+    [1 ] 0x7FF63872BE41 Starfield.exe+2B6BE41
+        mov rax,[rbx]
+    [2 ] 0x7FF63872BE8E Starfield.exe+2B6BE8E
+        nop
+    [3 ] 0x7FF63872BE8E Starfield.exe+2B6BE8E
+        nop
+    [4 ] 0x7FF63872BE8E Starfield.exe+2B6BE8E
+        nop
+    [5 ] 0x7FF63872BE8E Starfield.exe+2B6BE8E
+        nop
+    [6 ] 0x7FF63872C453 Starfield.exe+2B6C453
+        nop
+    [7 ] 0x7FF636201C93 Starfield.exe+0641C93
+        movzx r14d,al
+    [8 ] 0x7FF636201E63 Starfield.exe+0641E63
+        mov rax,[rbx+10h]
+    [9 ] 0x7FF637F5F5F1 Starfield.exe+239F5F1
+        test al,al
+    [10] 0x7FF6374965D2 Starfield.exe+18D65D2
+        mov rcx,[rdi+38h]
+    [11] 0x7FF636E1BAA5 Starfield.exe+125BAA5
+        and dword ptr [rbx+208h],0FFFFFFFEh
+    [12] 0x7FF6366C47DF Starfield.exe+0B047DF
+        mov rcx,[rbx+10h]
+    [13] 0x7FF63841AF4B Starfield.exe+285AF4B
+        test r13b,bl
+    [14] 0x7FF63841EC00 Starfield.exe+285EC00
+        mov ecx,[3520BC4h]
+    [15] 0x7FF63841A1BA Starfield.exe+285A1BA
+        xor eax,eax
+    [16] 0x7FF637E15481 Starfield.exe+2255481
+        mov rcx,[3E862E7h]
+    [17] 0x7FFC4205257D  KERNEL32.DLL+001257D BaseThreadInitThunk
+        mov ecx,eax
+    [18] 0x7FFC42B0AF08     ntdll.dll+005AF08 RtlUserThreadStart
+        jmp short 0000000000000021h
+
+REGISTERS:
+    RAX 0x1                (size_t)
+    RBX 0x127F79B2E88      (char*) "\x01"
+    RCX 0x0                (size_t)
+    RDX 0x1284DE40AC0      (void*)
+    RSI 0x7FF63A616B00     (void* -> Starfield.exe+4A56B00)
+        jo short 0FFFFFFFFFFFFFFE8h
+    RDI 0x1                (size_t)
+    RBP 0x11B34FEDE0       (void*)
+    RSP 0x11B34FECE0       (char*) "\n"
+    R8  0x1284DFFE400      (void*)
+    R9  0x7FF63BCC8260     (void* -> Starfield.exe+6108260)
+        mov al,[1284E5FE3h]
+    R10 0x1284DE40AC0      (void*)
+    R11 0x7FF63A616B00     (void* -> Starfield.exe+4A56B00)
+        jo short 0FFFFFFFFFFFFFFE8h
+    R12 0x12874E87500      (NiNode*)
+    R13 0x11B34FF300       (void*)
+    R14 0x1                (size_t)
+    R15 0x0                (size_t)
+
+STACK:
+    [RSP+0   ] 0xA                (size_t)
+    [RSP+8   ] 0x12874E87500      (NiNode*)
+    [RSP+10  ] 0x12874E87A40      (NiNode*)
+    [RSP+18  ] 0x12874B216C0      (BSFadeNode*)
+    [RSP+20  ] 0x3A               (size_t)
+    [RSP+28  ] 0x0                (size_t)
+    [RSP+30  ] 0xD                (size_t)
+    [RSP+38  ] 0x12874E87A40      (NiNode*)
+    [RSP+40  ] 0x30656D614E6F4E   (size_t)
+    [RSP+48  ] 0x12874B216C0      (BSFadeNode*)
+    [RSP+50  ] 0x3F               (size_t)
+    [RSP+58  ] 0x0                (size_t)
+    [RSP+60  ] 0xD                (size_t)
+    [RSP+68  ] 0x7FF63A616B00     (void* -> Starfield.exe+4A56B00)
+        jo short 0FFFFFFFFFFFFFFE8h
+    [RSP+70  ] 0x127F79B2E88      (char*) "\x01"
+    [RSP+78  ] 0x12874B216C0      (BSFadeNode*)
+    [RSP+80  ] 0x10               (size_t)
+    [RSP+88  ] 0x0                (size_t)
+    [RSP+90  ] 0xD                (size_t)
+    [RSP+98  ] 0x12874E87CE0      (NiNode*)
+    [RSP+A0  ] 0x12874EB23F0      (NiNode*)
+    [RSP+A8  ] 0x12874B216C0      (BSFadeNode*)
+    [RSP+B0  ] 0x1                (size_t)
+    [RSP+B8  ] 0x0                (size_t)
+    [RSP+C0  ] 0xD                (size_t)
+    [RSP+C8  ] 0x12874EB23F0      (NiNode*)
+    [RSP+D0  ] 0x12874B216C0      (BSFadeNode*)
+    [RSP+D8  ] 0x12874B216C0      (BSFadeNode*)
+    [RSP+E0  ] 0x6                (size_t)
+    [RSP+E8  ] 0x0                (size_t)
+    [RSP+F0  ] 0xD                (size_t)
+    [RSP+F8  ] 0x128687A01C8      (BSFaceFX*)
+    [RSP+100 ] 0x12874BB1DC0      (BSFadeNode*)
+    [RSP+108 ] 0x12874B3BAB0      (char*) "\x06"
+    [RSP+110 ] 0x0                (size_t)
+    [RSP+118 ] 0x0                (size_t)
+    [RSP+120 ] 0xD                (size_t)
+    [RSP+128 ] 0x12874B3BAB0      (char*) "\x06"
+    [RSP+130 ] 0x756F532F61746144 (size_t)
+    [RSP+138 ] 0x7FF637E17994     (void* -> Starfield.exe+2257994)
+        mov rbp,rax
+    [RSP+140 ] 0x656966726174532F (size_t)
+    [RSP+148 ] 0x11B34FF3F0       (void*)
+    [RSP+150 ] 0x11B34FF240       (stl::local_function_detail::LocalFunctionImpl<std::reference_wrapper<<lambda_c2a6f7ea8d9a4010ba2cdb2b30f93741> >,void,NiAVObject &>*)
+    [RSP+158 ] 0x1                (size_t)
+    [RSP+160 ] 0x4                (size_t)
+    [RSP+168 ] 0x1                (size_t)
+    [RSP+170 ] 0x12874E877A0      (NiNode*)
+    [RSP+178 ] 0x12879372A80      (BSParticle*)
+    [RSP+180 ] 0x11B34FF4C0       (void*)
+    [RSP+188 ] 0x7FF63872BE4A     (void* -> Starfield.exe+2B6BE4A)
+        mov rsi,rax
+    [RSP+190 ] 0x0                (size_t)
+    [RSP+198 ] 0x12879372A80      (BSParticle*)
+    [RSP+1A0 ] 0x12874E8002C      (void*)
+    [RSP+1A8 ] 0x11B34FF3F0       (void*)
+    [RSP+1B0 ] 0x11B34FF240       (stl::local_function_detail::LocalFunctionImpl<std::reference_wrapper<<lambda_c2a6f7ea8d9a4010ba2cdb2b30f93741> >,void,NiAVObject &>*)
+    [RSP+1B8 ] 0x1                (size_t)
+    [RSP+1C0 ] 0x4                (size_t)
+    [RSP+1C8 ] 0x1                (size_t)
+    [RSP+1D0 ] 0x12874E87A40      (NiNode*)
+    [RSP+1D8 ] 0x12874E87500      (NiNode*)
+    [RSP+1E0 ] 0x11B34FF4C0       (void*)
+    [RSP+1E8 ] 0x7FF63872BE41     (void* -> Starfield.exe+2B6BE41)
+        mov rax,[rbx]
+    [RSP+1F0 ] 0x12879372A80      (BSParticle*)
+    [RSP+1F8 ] 0x12874E87500      (NiNode*)
+    [RSP+200 ] 0x12874E878F0      (NiNode*)
+    [RSP+208 ] 0x0                (size_t)
+    [RSP+210 ] 0x11B34FF240       (stl::local_function_detail::LocalFunctionImpl<std::reference_wrapper<<lambda_c2a6f7ea8d9a4010ba2cdb2b30f93741> >,void,NiAVObject &>*)
+    [RSP+218 ] 0x7FF63872BE8E     (void* -> Starfield.exe+2B6BE8E)
+        nop
+    [RSP+220 ] 0x12874E877A0      (NiNode*)
+    [RSP+228 ] 0x12874E87500      (NiNode*)
+    [RSP+230 ] 0x12874E87A40      (NiNode*)
+    [RSP+238 ] 0x1                (size_t)
+    [RSP+240 ] 0x11B34FF240       (stl::local_function_detail::LocalFunctionImpl<std::reference_wrapper<<lambda_c2a6f7ea8d9a4010ba2cdb2b30f93741> >,void,NiAVObject &>*)
+    [RSP+248 ] 0x7FF63872BE8E     (void* -> Starfield.exe+2B6BE8E)
+        nop
+    [RSP+250 ] 0x12874E87500      (NiNode*)
+    [RSP+258 ] 0x12874E87A40      (NiNode*)
+    [RSP+260 ] 0x12874E87B90      (NiNode*)
+    [RSP+268 ] 0x0                (size_t)
+    [RSP+270 ] 0x11B34FF240       (stl::local_function_detail::LocalFunctionImpl<std::reference_wrapper<<lambda_c2a6f7ea8d9a4010ba2cdb2b30f93741> >,void,NiAVObject &>*)
+    [RSP+278 ] 0x7FF63872BE8E     (void* -> Starfield.exe+2B6BE8E)
+        nop
+    [RSP+280 ] 0x12874E87A40      (NiNode*)
+    [RSP+288 ] 0x12874E87B90      (NiNode*)
+    [RSP+290 ] 0x12874E87CE0      (NiNode*)
+    [RSP+298 ] 0x0                (size_t)
+    [RSP+2A0 ] 0x11B34FF240       (stl::local_function_detail::LocalFunctionImpl<std::reference_wrapper<<lambda_c2a6f7ea8d9a4010ba2cdb2b30f93741> >,void,NiAVObject &>*)
+    [RSP+2A8 ] 0x7FF63872BE8E     (void* -> Starfield.exe+2B6BE8E)
+        nop
+    [RSP+2B0 ] 0x12874E87B90      (NiNode*)
+    [RSP+2B8 ] 0x12874E87CE0      (NiNode*)
+    [RSP+2C0 ] 0x12874EB23F0      (NiNode*)
+    [RSP+2C8 ] 0x4                (size_t)
+    [RSP+2D0 ] 0x12874B216C0      (BSFadeNode*)
+    [RSP+2D8 ] 0x7FF63872C453     (void* -> Starfield.exe+2B6C453)
+        nop
+    [RSP+2E0 ] 0x12874E87CE0      (NiNode*)
+    [RSP+2E8 ] 0x12874EB23F0      (NiNode*)
+    [RSP+2F0 ] 0xFFFFFFFF         (size_t)
+    [RSP+2F8 ] 0x0                (size_t)
+    [RSP+300 ] 0x0                (size_t)
+    [RSP+308 ] 0x0                (size_t)
+    [RSP+310 ] 0xBE116DF600000061 (size_t)
+    [RSP+318 ] 0x127F79B2E10      (char*) "\x01"
+    [RSP+320 ] 0x3F7D5880BE116DF6 (size_t)
+    [RSP+328 ] 0x7FF63637A620     (void* -> Starfield.exe+07BA620)
+        test eax,eax
+    [RSP+330 ] 0x127F5E95F60      (void*)
+    [RSP+338 ] 0x127F5E95F58      (void*)
+    [RSP+340 ] 0x2402             (size_t)
+    [RSP+348 ] 0x11B34FF3F0       (void*)
+    [RSP+350 ] 0x5F5E95F68        (size_t)
+    [RSP+358 ] 0x7FF6363C00A1     (void* -> Starfield.exe+08000A1)
+        mov rbx,[rsp+30h]
+    [RSP+360 ] 0x11B34FF090       (void*)
+    [RSP+368 ] 0x3F80000000000000 (size_t)
+    [RSP+370 ] 0x11F00000001      (size_t)
+    [RSP+378 ] 0x127F5E95F50      (void*)
+    [RSP+380 ] 0x11F8549EE00      (ScrapHeap*)
+    [RSP+388 ] 0x0                (size_t)
+    [RSP+390 ] 0x11B34FF068       (void*)
+    [RSP+398 ] 0x0                (size_t)
+    [RSP+3A0 ] 0x0                (size_t)
+    [RSP+3A8 ] 0x0                (size_t)
+    [RSP+3B0 ] 0x0                (size_t)
+    [RSP+3B8 ] 0x12700000000      (void*)
+    [RSP+3C0 ] 0x11B34FF430       (void*)
+    [RSP+3C8 ] 0x127F5E95F48      (void*)
+    [RSP+3D0 ] 0x127F5E95F40      (void*)
+    [RSP+3D8 ] 0x7FF638480BC1     (void* -> Starfield.exe+28C0BC1)
+        mov eax,eax
+    [RSP+3E0 ] 0x11FAF8A0230      (void*)
+    [RSP+3E8 ] 0x40               (size_t)
+    [RSP+3F0 ] 0x2F               (size_t)
+    [RSP+3F8 ] 0x3E               (size_t)
+    [RSP+400 ] 0x11F85490000      (void*)
+    [RSP+408 ] 0x12854E3E070      (char*) "P"
+    [RSP+410 ] 0x2402             (size_t)
+    [RSP+418 ] 0x7FF638722403     (void* -> Starfield.exe+2B62403)
+        add dword ptr [rax],0FFFFFFFFh
+    [RSP+420 ] 0x127F5E95E30      (StorageTable::StorageData<StorageTable::Geometry::Storage>*)
+    [RSP+428 ] 0x127F5E7DBC0      (StorageTable::ReducedLatencyScheduleImpl<StorageTable::AppWriterSchedule>*)
+    [RSP+430 ] 0x0                (size_t)
+    [RSP+438 ] 0x23299            (size_t)
+    [RSP+440 ] 0x11FF5BCCF40      (StorageTable::AsyncTableColumn<StorageTable::Geometry::Storage,StorageTable::Transform>*)
+    [RSP+448 ] 0x0                (size_t)
+    [RSP+450 ] 0x0                (size_t)
+    [RSP+458 ] 0xA50              (size_t)
+    [RSP+460 ] 0x11F8549EE00      (ScrapHeap*)
+    [RSP+468 ] 0x11FAF8A0100      (void*)
+    [RSP+470 ] 0x11FAF8A0200      (void*)
+    [RSP+478 ] 0x11FAF8A0100      (void*)
+    [RSP+480 ] 0x0                (size_t)
+    [RSP+488 ] 0x11FAF8A0168      (char*) "\x01"
+    [RSP+490 ] 0x11FAF8A0100      (void*)
+    [RSP+498 ] 0x3EA172070000000D (size_t)
+    [RSP+4A0 ] 0xC422CB1AC4F63A5C (size_t)
+    [RSP+4A8 ] 0x3F7FF2C642050ADA (size_t)
+    [RSP+4B0 ] 0x11FF5BCD380      (StorageTable::AsyncTableColumn<StorageTable::Geometry::Storage,StorageTable::Bounds>*)
+    [RSP+4B8 ] 0x7FF636379E32     (void* -> Starfield.exe+07B9E32)
+        mov rbx,[rsp+38h]
+    [RSP+4C0 ] 0x1241AD625E0      (Actor*)
+    [RSP+4C8 ] 0x11B34FF150       (void*)
+    [RSP+4D0 ] 0x1241AD625E0      (Actor*)
+    [RSP+4D8 ] 0x11B34FF168       (void*)
+    [RSP+4E0 ] 0x0                (size_t)
+    [RSP+4E8 ] 0x7FF638457454     (void* -> Starfield.exe+2897454)
+        movzx edx,word ptr [r10+8]
+    [RSP+4F0 ] 0x12872164F00      (void*)
+    [RSP+4F8 ] 0x12BE6882990      (void*)
+    [RSP+500 ] 0x23299            (size_t)
+    [RSP+508 ] 0x1287636B4D0      (BGSModelNode*)
+    [RSP+510 ] 0x0                (size_t)
+    [RSP+518 ] 0x0                (size_t)
+    [RSP+520 ] 0x0                (size_t)
+    [RSP+528 ] 0x0                (size_t)
+    [RSP+530 ] 0x0                (size_t)
+    [RSP+538 ] 0x0                (size_t)
+    [RSP+540 ] 0x0                (size_t)
+    [RSP+548 ] 0x0                (size_t)
+    [RSP+550 ] 0x11B34FF690       (void*)
+    [RSP+558 ] 0x1287636B4D0      (BGSModelNode*)
+    [RSP+560 ] 0x7FF63AA079A0     (void* -> Starfield.exe+4E479A0)
+        add [rdi],ch
+    [RSP+568 ] 0x11B34FF300       (void*)
+    [RSP+570 ] 0x1287990B800      (BSGeometry*)
+    [RSP+578 ] 0x11B34FF329       (void*)
+    [RSP+580 ] 0x12874BB1DC0      (BSFadeNode*)
+    [RSP+588 ] 0x3EC220243EC22024 (size_t)
+    [RSP+590 ] 0xC422CAF0C4F639C9 (size_t)
+    [RSP+598 ] 0x3EC223A0420510C8 (size_t)
+    [RSP+5A0 ] 0x3EC223A03EC223A0 (size_t)
+    [RSP+5A8 ] 0x0                (size_t)
+    [RSP+5B0 ] 0xC422CCB4C4F63B41 (size_t)
+    [RSP+5B8 ] 0x3F7FF2C64200E91D (size_t)
+    [RSP+5C0 ] 0x1287990B800      (BSGeometry*)
+    [RSP+5C8 ] 0x7FF63871DFD8     (void* -> Starfield.exe+2B5DFD8)
+        vzeroupper
+    [RSP+5D0 ] 0x1023299          (size_t)
+    [RSP+5D8 ] 0x0                (size_t)
+    [RSP+5E0 ] 0x0                (size_t)
+    [RSP+5E8 ] 0x0                (size_t)
+    [RSP+5F0 ] 0xBD4B0000BCA60000 (size_t)
+    [RSP+5F8 ] 0x3EC22DA83F84FC40 (size_t)
+    [RSP+600 ] 0xBD4B0000BCA60000 (size_t)
+    [RSP+608 ] 0x3EC22DA83F84FC40 (size_t)
+    [RSP+610 ] 0xC422CAF1C4F639C8 (size_t)
+    [RSP+618 ] 0x3EC22024420510AF (size_t)
+    [RSP+620 ] 0x12878DA5290      (BGSModelNode*)
+    [RSP+628 ] 0x11B34FEFF8       (void*)
+    [RSP+630 ] 0x12874B216C0      (BSFadeNode*)
+    [RSP+638 ] 0x11B34FF140       (void*)
+    [RSP+640 ] 0x11B34FF050       (char*) "\x01"
+    [RSP+648 ] 0x11B34FF034       (char*) "\x05"
+    [RSP+650 ] 0x11B34FF3F0       (void*)
+    [RSP+658 ] 0x11B34FF430       (void*)
+    [RSP+660 ] 0x11B34FF0A8       (void*)
+    [RSP+668 ] 0x11B34FF3D8       (char*) "g"
+    [RSP+670 ] 0x11B34FF520       (BSModelNodeAnimRig*)
+    [RSP+678 ] 0x4                (size_t)
+    [RSP+680 ] 0x12874EB23F0      (NiNode*)
+    [RSP+688 ] 0x7FF638413EBE     (void* -> Starfield.exe+2853EBE)
+        nop
+    [RSP+690 ] 0x11FF60DD3C0      (StorageTable::AsyncTableColumn<StorageTable::Model::Storage,StorageTable::Model::GeometryHitGroup>*)
+    [RSP+698 ] 0x7FF636379E32     (void* -> Starfield.exe+07B9E32)
+        mov rbx,[rsp+38h]
+    [RSP+6A0 ] 0x12874B216C0      (BSFadeNode*)
+    [RSP+6A8 ] 0x11F8549C070      (void*)
+    [RSP+6B0 ] 0xFFFFFFFF         (size_t)
+    [RSP+6B8 ] 0x12878DA5290      (BGSModelNode*)
+    [RSP+6C0 ] 0x1286A8BA0C0      (void*)
+    [RSP+6C8 ] 0x0                (size_t)
+    [RSP+6D0 ] 0x1286A8BA0E8      (void*)
+    [RSP+6D8 ] 0x7FF636201C93     (void* -> Starfield.exe+0641C93)
+        movzx r14d,al
+    [RSP+6E0 ] 0x12878DA5290      (BGSModelNode*)
+    [RSP+6E8 ] 0x12874B216C0      (BSFadeNode*)
+    [RSP+6F0 ] 0x11B34FF520       (BSModelNodeAnimRig*)
+    [RSP+6F8 ] 0x127F79B0067      (void*)
+    [RSP+700 ] 0x1100000004       (size_t)
+    [RSP+708 ] 0x12874BB1DC0      (BSFadeNode*)
+    [RSP+710 ] 0x0                (size_t)
+    [RSP+718 ] 0x0                (size_t)
+    [RSP+720 ] 0x0                (size_t)
+    [RSP+728 ] 0x0                (size_t)
+    [RSP+730 ] 0x1286A8BA080      (BSAnimationGraphManager*)
+    [RSP+738 ] 0x127F5E8BE68      (void*)
+    [RSP+740 ] 0x0                (size_t)
+    [RSP+748 ] 0x1DB40            (size_t)
+    [RSP+750 ] 0x0                (size_t)
+    [RSP+758 ] 0x0                (size_t)
+    [RSP+760 ] 0x0                (size_t)
+    [RSP+768 ] 0x0                (size_t)
+    [RSP+770 ] 0x1280874F638      (void*)
+    [RSP+778 ] 0x76D0             (size_t)
+    [RSP+780 ] 0x10076D03F800000  (size_t)
+    [RSP+788 ] 0x3F4C5000420362FD (size_t)
+    [RSP+790 ] 0x11F8549C070      (void*)
+    [RSP+798 ] 0x1241AD625E0      (Actor*)
+    [RSP+7A0 ] 0xFFFFFFFF         (size_t)
+    [RSP+7A8 ] 0x12874BB1DC0      (BSFadeNode*)
+    [RSP+7B0 ] 0x12874BB1DC0      (BSFadeNode*)
+    [RSP+7B8 ] 0x11B34FF730       (void*)
+    [RSP+7C0 ] 0x12874BB1DC0      (BSFadeNode*)
+    [RSP+7C8 ] 0x7FF637F5FCDF     (void* -> Starfield.exe+239FCDF)
+        add rsp,0B0h
+    [RSP+7D0 ] 0x3FB5A3CA         (size_t)
+    [RSP+7D8 ] 0x10076D0          (size_t)
+    [RSP+7E0 ] 0x0                (size_t)
+    [RSP+7E8 ] 0x10076D0          (size_t)
+    [RSP+7F0 ] 0xC422CAF0C4F639C9 (size_t)
+    [RSP+7F8 ] 0x1286A8BA0E8      (void*)
+    [RSP+800 ] 0x11B34FF5A0       (void*)
+    [RSP+808 ] 0x1241AD609C0      (Actor*)
+    [RSP+810 ] 0x7FF63A618648     (void* -> Starfield.exe+4A58648)
+        push rax
+    [RSP+818 ] 0x11B34FF4E0       (void*)
+    [RSP+820 ] 0x0                (size_t)
+    [RSP+828 ] 0x7FF636379D7F     (void* -> Starfield.exe+07B9D7F)
+        test rax,rax
+    [RSP+830 ] 0x7FF63BD72900     (void* -> Starfield.exe+61B2900)
+        fwait
+    [RSP+838 ] 0x7FF636370001     (void* -> Starfield.exe+07B0001)
+        add [rbp+2Bh],rsi
+    [RSP+840 ] 0x7FF63A865B80     (void* -> Starfield.exe+4CA5B80)
+    [RSP+848 ] 0x1280874F638      (void*)
+    [RSP+850 ] 0x12878DA5318      (void*)
+    [RSP+858 ] 0x7FF635E87800     (void* -> Starfield.exe+02C7800)
+        mov rax,[rsp+58h]
+    [RSP+860 ] 0x11B34FF5C0       (void*)
+    [RSP+868 ] 0x11F8549C070      (void*)
+    [RSP+870 ] 0x1241AD609C0      (Actor*)
+    [RSP+878 ] 0x1D4              (size_t)
+    [RSP+880 ] 0xFFFFFFFF         (size_t)
+    [RSP+888 ] 0x12874B216C0      (BSFadeNode*)
+    [RSP+890 ] 0x12874B216C0      (BSFadeNode*)
+    [RSP+898 ] 0x12878DA5290      (BGSModelNode*)
+    [RSP+8A0 ] 0x11B34FF730       (void*)
+    [RSP+8A8 ] 0x7FF636201E63     (void* -> Starfield.exe+0641E63)
+        mov rax,[rbx+10h]
+    [RSP+8B0 ] 0x12878DA5290      (BGSModelNode*)
+    [RSP+8B8 ] 0x12874B216C0      (BSFadeNode*)
+    [RSP+8C0 ] 0x11000CAD66       (size_t)
+    [RSP+8C8 ] 0x12700000063      (void*)
+    [RSP+8D0 ] 0x12874B216C0      (BSFadeNode*)
+    [RSP+8D8 ] 0x7FF637F5F5F1     (void* -> Starfield.exe+239F5F1)
+        test al,al
+    [RSP+8E0 ] 0x1241AD609C0      (Actor*)
+    [RSP+8E8 ] 0x11B34FF690       (void*)
+    [RSP+8F0 ] 0x127F5E73D90      (void*)
+    [RSP+8F8 ] 0x127F5E73D88      (void*)
+    [RSP+900 ] 0x127F5E73D80      (void*)
+    [RSP+908 ] 0x127F5E73D78      (void*)
+    [RSP+910 ] 0x127F5E73D70      (void*)
+    [RSP+918 ] 0x127F5E73D68      (void*)
+    [RSP+920 ] 0x11F8549C070      (void*)
+    [RSP+928 ] 0x1241AD609C0      (Actor*)
+    [RSP+930 ] 0x1D4              (size_t)
+    [RSP+938 ] 0xFFFFFFFF         (size_t)
+    [RSP+940 ] 0x12874B216C0      (BSFadeNode*)
+    [RSP+948 ] 0x7FF6374965D2     (void* -> Starfield.exe+18D65D2)
+        mov rcx,[rdi+38h]
+    [RSP+950 ] 0x0                (size_t)
+    [RSP+958 ] 0x0                (size_t)
+    [RSP+960 ] 0x12866A73550      (void*)
+    [RSP+968 ] 0x8                (size_t)
+    [RSP+970 ] 0x8000032E48       (size_t)
+    [RSP+978 ] 0x7FF63DFA1200     (void* -> Starfield.exe+83E1200)
+        push rbx
+    [RSP+980 ] 0x7F8000007F800000 (size_t)
+    [RSP+988 ] 0x7F8000007F800000 (size_t)
+    [RSP+990 ] 0x0                (size_t)
+    [RSP+998 ] 0x0                (size_t)
+    [RSP+9A0 ] 0x7F8000007F800000 (size_t)
+    [RSP+9A8 ] 0x7F8000007F800000 (size_t)
+    [RSP+9B0 ] 0x12843212797      (void*)
+    [RSP+9B8 ] 0x127F7839BA0      (NiCamera*)
+    [RSP+9C0 ] 0x11B34FF680       (void*)
+    [RSP+9C8 ] 0x11B34FF660       (void*)
+    [RSP+9D0 ] 0x0                (size_t)
+    [RSP+9D8 ] 0x0                (size_t)
+    [RSP+9E0 ] 0x0                (size_t)
+    [RSP+9E8 ] 0x2311             (size_t)
+    [RSP+9F0 ] 0x354400000000     (size_t)
+    [RSP+9F8 ] 0x12800000002      (void*)
+    [RSP+A00 ] 0x100A6A5          (size_t)
+    [RSP+A08 ] 0x7FF63751E0BB     (void* -> Starfield.exe+195E0BB)
+        test al,al
+    [RSP+A10 ] 0x11B34FF6E8       (void*)
+    [RSP+A18 ] 0x11B34FF6F0       (void*)
+    [RSP+A20 ] 0x11B34FF7A0       (void*)
+    [RSP+A28 ] 0x7FF63824E349     (void* -> Starfield.exe+268E349)
+        cmp qword ptr [rdi+20h],0
+    [RSP+A30 ] 0x1207B384C60      (Actor*)
+    [RSP+A38 ] 0x12882E67B08      (void*)
+    [RSP+A40 ] 0x100A6A5          (size_t)
+    [RSP+A48 ] 0x11B34FF718       (void*)
+    [RSP+A50 ] 0xFFFFFFFF         (size_t)
+    [RSP+A58 ] 0x1                (size_t)
+    [RSP+A60 ] 0x120820163D0      (void*)
+    [RSP+A68 ] 0x7FF6372C3E82     (void* -> Starfield.exe+1703E82)
+        cmp dword ptr [rbx+8],0
+    [RSP+A70 ] 0x0                (size_t)
+    [RSP+A78 ] 0x0                (size_t)
+    [RSP+A80 ] 0x3DCCCCCD         (size_t)
+    [RSP+A88 ] 0x0                (size_t)
+    [RSP+A90 ] 0xFFFFFFFF         (size_t)
+    [RSP+A98 ] 0x12866A73550      (void*)
+    [RSP+AA0 ] 0x1                (size_t)
+    [RSP+AA8 ] 0x12866A73550      (void*)
+    [RSP+AB0 ] 0x12874B216C0      (BSFadeNode*)
+    [RSP+AB8 ] 0x1                (size_t)
+    [RSP+AC0 ] 0x11B34FF808       (void*)
+    [RSP+AC8 ] 0x7FF636E1BAA5     (void* -> Starfield.exe+125BAA5)
+        and dword ptr [rbx+208h],0FFFFFFFEh
+    [RSP+AD0 ] 0x1241AD609C0      (Actor*)
+    [RSP+AD8 ] 0x1241AD609C0      (Actor*)
+    [RSP+AE0 ] 0x2                (size_t)
+    [RSP+AE8 ] 0xC081B658C0000000 (size_t)
+    [RSP+AF0 ] 0x0                (size_t)
+    [RSP+AF8 ] 0x11B34FF860       (void*)
+    [RSP+B00 ] 0x12874B216C0      (BSFadeNode*)
+    [RSP+B08 ] 0x7FF63A6141D0     (void* -> Starfield.exe+4A541D0)
+        push rax
+    [RSP+B10 ] 0x11B34FF7D8       (void*)
+    [RSP+B18 ] 0x0                (size_t)
+    [RSP+B20 ] 0x0                (size_t)
+    [RSP+B28 ] 0x11FF5BBC7C0      (char*) "\x14>\x1e"
+    [RSP+B30 ] 0x7FF63DFA1200     (void* -> Starfield.exe+83E1200)
+        push rbx
+    [RSP+B38 ] 0x1                (size_t)
+    [RSP+B40 ] 0x8A318E5B3        (size_t)
+    [RSP+B48 ] 0x11F8549F218      (stl::unique_function_impl::detail::TypeErasedFuncImpl<<lambda_8291e7d1e643b42ca1ce574da97d71a6>,void *>*)
+    [RSP+B50 ] 0x0                (size_t)
+    [RSP+B58 ] 0x128731E4EE8      (BSJobs2::Detail::TNodeJob<void (&)(unsigned int),unsigned int &>*)
+    [RSP+B60 ] 0x11F8549C070      (void*)
+    [RSP+B68 ] 0x7FF6366C47DF     (void* -> Starfield.exe+0B047DF)
+        mov rcx,[rbx+10h]
+    [RSP+B70 ] 0x120820163D0      (void*)
+    [RSP+B78 ] 0x1241AD609C0      (Actor*)
+    [RSP+B80 ] 0x0                (size_t)
+    [RSP+B88 ] 0x11F8549F218      (stl::unique_function_impl::detail::TypeErasedFuncImpl<<lambda_8291e7d1e643b42ca1ce574da97d71a6>,void *>*)
+    [RSP+B90 ] 0x128731E4EE9      (void*)
+    [RSP+B98 ] 0x7FF63841AF4B     (void* -> Starfield.exe+285AF4B)
+        test r13b,bl
+    [RSP+BA0 ] 0x11F8549C070      (void*)
+    [RSP+BA8 ] 0x12859A2EA59      (void*)
+    [RSP+BB0 ] 0x7FF63DFA1200     (void* -> Starfield.exe+83E1200)
+        push rbx
+    [RSP+BB8 ] 0x128731E42E9      (void*)
+    [RSP+BC0 ] 0x0                (size_t)
+    [RSP+BC8 ] 0x0                (size_t)
+    [RSP+BD0 ] 0x0                (size_t)
+    [RSP+BD8 ] 0x0                (size_t)
+    [RSP+BE0 ] 0x0                (size_t)
+    [RSP+BE8 ] 0x0                (size_t)
+    [RSP+BF0 ] 0x0                (size_t)
+    [RSP+BF8 ] 0x0                (size_t)
+    [RSP+C00 ] 0x11FF5BBD028      (BSJobs2::Detail::GroupThread*)
+    [RSP+C08 ] 0x7FF63A870870     (void* -> Starfield.exe+4CB0870)
+        nop
+    [RSP+C10 ] 0x0                (size_t)
+    [RSP+C18 ] 0x7FF63841EC00     (void* -> Starfield.exe+285EC00)
+        mov ecx,[3520BC4h]
+    [RSP+C20 ] 0x8A318E5B3        (size_t)
+    [RSP+C28 ] 0x7FF63BCC4100     (BSFixedSizeBlockAllocator::TAlloc<4294967296,16777216,128>*)
+    [RSP+C30 ] 0x8A318E6A4        (size_t)
+    [RSP+C38 ] 0x128731E4EE9      (void*)
+    [RSP+C40 ] 0x0                (size_t)
+    [RSP+C48 ] 0x7FF63841A1BA     (void* -> Starfield.exe+285A1BA)
+        xor eax,eax
+    [RSP+C50 ] 0x0                (size_t)
+    [RSP+C58 ] 0x0                (size_t)
+    [RSP+C60 ] 0x11FF5BBD028      (BSJobs2::Detail::GroupThread*)
+    [RSP+C68 ] 0x7FF63A870870     (void* -> Starfield.exe+4CB0870)
+        nop
+    [RSP+C70 ] 0x11FF5BBD028      (BSJobs2::Detail::GroupThread*)
+    [RSP+C78 ] 0x7FF637E15481     (void* -> Starfield.exe+2255481)
+        mov rcx,[3E862E7h]
+    [RSP+C80 ] 0x7FF63BCC4100     (BSFixedSizeBlockAllocator::TAlloc<4294967296,16777216,128>*)
+    [RSP+C88 ] 0x7FF63A870870     (void* -> Starfield.exe+4CB0870)
+        nop
+    [RSP+C90 ] 0x0                (size_t)
+    [RSP+C98 ] 0x0                (size_t)
+    [RSP+CA0 ] 0x11FF5BBD028      (BSJobs2::Detail::GroupThread*)
+    [RSP+CA8 ] 0x0                (size_t)
+    [RSP+CB0 ] 0x0                (size_t)
+    [RSP+CB8 ] 0x0                (size_t)
+    [RSP+CC0 ] 0x7FF63A870870     (void* -> Starfield.exe+4CB0870)
+        nop
+    [RSP+CC8 ] 0x11B34FF980       (void*)
+    [RSP+CD0 ] 0x7FF63DD80E90     (BSThreadEvent::`anonymous namespace'::Source*)
+    [RSP+CD8 ] 0x0                (size_t)
+    [RSP+CE0 ] 0x0                (size_t)
+    [RSP+CE8 ] 0x0                (size_t)
+    [RSP+CF0 ] 0x0                (size_t)
+    [RSP+CF8 ] 0x7FFC4205257D     (void* -> KERNEL32.DLL+001257D BaseThreadInitThunk)
+        mov ecx,eax
+    [RSP+D00 ] 0x0                (size_t)
+    [RSP+D08 ] 0x0                (size_t)
+    [RSP+D10 ] 0x0                (size_t)
+    [RSP+D18 ] 0x0                (size_t)
+    [RSP+D20 ] 0x0                (size_t)
+    [RSP+D28 ] 0x7FFC42B0AF08     (void* -> ntdll.dll+005AF08 RtlUserThreadStart)
+        jmp short 0000000000000021h
+    [RSP+D30 ] 0x0                (size_t)
+    [RSP+D38 ] 0x0                (size_t)
+    [RSP+D40 ] 0x0                (size_t)
+    [RSP+D48 ] 0x0                (size_t)
+    [RSP+D50 ] 0x0                (size_t)
+    [RSP+D58 ] 0x0                (size_t)
+    [RSP+D60 ] 0xAEB8963500000000 (size_t)
+    [RSP+D68 ] 0x0                (size_t)
+    [RSP+D70 ] 0x4F0FFFFFB30      (size_t)
+    [RSP+D78 ] 0x7FFC3FF2B030     (void* -> KERNELBASE.dll+016B030 UnhandledExceptionFilter)
+        mov [rsp+10h],rbx
+    [RSP+D80 ] 0x11B34FD740       (void*)
+    [RSP+D88 ] 0x3FFE48A51302800  (size_t)
+    [RSP+D90 ] 0x7FFC914A2605     (size_t)
+    [RSP+D98 ] 0x11B34FD740       (void*)
+    [RSP+DA0 ] 0x0                (size_t)
+    [RSP+DA8 ] 0x0                (size_t)
+    [RSP+DB0 ] 0x0                (size_t)
+    [RSP+DB8 ] 0x0                (size_t)
+    [RSP+DC0 ] 0x0                (size_t)
+    [RSP+DC8 ] 0x0                (size_t)
+    [RSP+DD0 ] 0x0                (size_t)
+    [RSP+DD8 ] 0x0                (size_t)
+    [RSP+DE0 ] 0x0                (size_t)
+    [RSP+DE8 ] 0x0                (size_t)
+    [RSP+DF0 ] 0x0                (size_t)
+    [RSP+DF8 ] 0x0                (size_t)
+    [RSP+E00 ] 0x0                (size_t)
+    [RSP+E08 ] 0x0                (size_t)
+    [RSP+E10 ] 0x0                (size_t)
+    [RSP+E18 ] 0x0                (size_t)
+    [RSP+E20 ] 0x0                (size_t)
+    [RSP+E28 ] 0x0                (size_t)
+    [RSP+E30 ] 0x0                (size_t)
+    [RSP+E38 ] 0x0                (size_t)
+    [RSP+E40 ] 0x0                (size_t)
+    [RSP+E48 ] 0x0                (size_t)
+    [RSP+E50 ] 0x0                (size_t)
+    [RSP+E58 ] 0x0                (size_t)
+    [RSP+E60 ] 0x0                (size_t)
+    [RSP+E68 ] 0x0                (size_t)
+    [RSP+E70 ] 0x0                (size_t)
+    [RSP+E78 ] 0x0                (size_t)
+    [RSP+E80 ] 0x0                (size_t)
+    [RSP+E88 ] 0x0                (size_t)
+    [RSP+E90 ] 0x0                (size_t)
+    [RSP+E98 ] 0x0                (size_t)
+    [RSP+EA0 ] 0x0                (size_t)
+    [RSP+EA8 ] 0x0                (size_t)
+    [RSP+EB0 ] 0x0                (size_t)
+    [RSP+EB8 ] 0x0                (size_t)
+    [RSP+EC0 ] 0x0                (size_t)
+    [RSP+EC8 ] 0x0                (size_t)
+    [RSP+ED0 ] 0x0                (size_t)
+    [RSP+ED8 ] 0x0                (size_t)
+    [RSP+EE0 ] 0x0                (size_t)
+    [RSP+EE8 ] 0x0                (size_t)
+    [RSP+EF0 ] 0x0                (size_t)
+    [RSP+EF8 ] 0x0                (size_t)
+    [RSP+F00 ] 0x0                (size_t)
+    [RSP+F08 ] 0x0                (size_t)
+    [RSP+F10 ] 0x0                (size_t)
+    [RSP+F18 ] 0x0                (size_t)
+    [RSP+F20 ] 0x0                (size_t)
+    [RSP+F28 ] 0x0                (size_t)
+    [RSP+F30 ] 0x0                (size_t)
+    [RSP+F38 ] 0x0                (size_t)
+    [RSP+F40 ] 0x0                (size_t)
+    [RSP+F48 ] 0x0                (size_t)
+    [RSP+F50 ] 0x0                (size_t)
+    [RSP+F58 ] 0x0                (size_t)
+    [RSP+F60 ] 0x0                (size_t)
+    [RSP+F68 ] 0x0                (size_t)
+    [RSP+F70 ] 0x0                (size_t)
+    [RSP+F78 ] 0x0                (size_t)
+    [RSP+F80 ] 0x0                (size_t)
+    [RSP+F88 ] 0x0                (size_t)
+    [RSP+F90 ] 0x0                (size_t)
+    [RSP+F98 ] 0x0                (size_t)
+    [RSP+FA0 ] 0x0                (size_t)
+    [RSP+FA8 ] 0x0                (size_t)
+    [RSP+FB0 ] 0x0                (size_t)
+    [RSP+FB8 ] 0x0                (size_t)
+    [RSP+FC0 ] 0x0                (size_t)
+    [RSP+FC8 ] 0x0                (size_t)
+    [RSP+FD0 ] 0x0                (size_t)
+    [RSP+FD8 ] 0x0                (size_t)
+    [RSP+FE0 ] 0x0                (size_t)
+    [RSP+FE8 ] 0x0                (size_t)
+    [RSP+FF0 ] 0x0                (size_t)
+    [RSP+FF8 ] 0x0                (size_t)
+    [RSP+1000] 0x0                (size_t)
+    [RSP+1008] 0x0                (size_t)
+    [RSP+1010] 0x0                (size_t)
+    [RSP+1018] 0x0                (size_t)
+    [RSP+1020] 0x0                (size_t)
+    [RSP+1028] 0x0                (size_t)
+    [RSP+1030] 0x0                (size_t)
+    [RSP+1038] 0x0                (size_t)
+    [RSP+1040] 0x0                (size_t)
+    [RSP+1048] 0x0                (size_t)
+    [RSP+1050] 0x0                (size_t)
+    [RSP+1058] 0x0                (size_t)
+    [RSP+1060] 0x0                (size_t)
+    [RSP+1068] 0x0                (size_t)
+    [RSP+1070] 0x0                (size_t)
+    [RSP+1078] 0x0                (size_t)
+    [RSP+1080] 0x0                (size_t)
+    [RSP+1088] 0x0                (size_t)
+    [RSP+1090] 0x0                (size_t)
+    [RSP+1098] 0x0                (size_t)
+    [RSP+10A0] 0x0                (size_t)
+    [RSP+10A8] 0x0                (size_t)
+    [RSP+10B0] 0x0                (size_t)
+    [RSP+10B8] 0x0                (size_t)
+    [RSP+10C0] 0x0                (size_t)
+    [RSP+10C8] 0x0                (size_t)
+    [RSP+10D0] 0x0                (size_t)
+    [RSP+10D8] 0x0                (size_t)
+    [RSP+10E0] 0x0                (size_t)
+    [RSP+10E8] 0x0                (size_t)
+    [RSP+10F0] 0x0                (size_t)
+    [RSP+10F8] 0x0                (size_t)
+    [RSP+1100] 0x0                (size_t)
+    [RSP+1108] 0x0                (size_t)
+    [RSP+1110] 0x0                (size_t)
+    [RSP+1118] 0x0                (size_t)
+    [RSP+1120] 0x0                (size_t)
+    [RSP+1128] 0x0                (size_t)
+    [RSP+1130] 0x0                (size_t)
+    [RSP+1138] 0x0                (size_t)
+    [RSP+1140] 0x0                (size_t)
+    [RSP+1148] 0x0                (size_t)
+    [RSP+1150] 0x0                (size_t)
+    [RSP+1158] 0x0                (size_t)
+    [RSP+1160] 0x0                (size_t)
+    [RSP+1168] 0x0                (size_t)
+    [RSP+1170] 0x0                (size_t)
+    [RSP+1178] 0x0                (size_t)
+    [RSP+1180] 0x0                (size_t)
+    [RSP+1188] 0x0                (size_t)
+    [RSP+1190] 0x0                (size_t)
+    [RSP+1198] 0x0                (size_t)
+    [RSP+11A0] 0x0                (size_t)
+    [RSP+11A8] 0x0                (size_t)
+    [RSP+11B0] 0x0                (size_t)
+    [RSP+11B8] 0x0                (size_t)
+    [RSP+11C0] 0x0                (size_t)
+    [RSP+11C8] 0x0                (size_t)
+    [RSP+11D0] 0x0                (size_t)
+    [RSP+11D8] 0x0                (size_t)
+    [RSP+11E0] 0x0                (size_t)
+    [RSP+11E8] 0x0                (size_t)
+    [RSP+11F0] 0x0                (size_t)
+    [RSP+11F8] 0x0                (size_t)
+    [RSP+1200] 0x0                (size_t)
+    [RSP+1208] 0x0                (size_t)
+    [RSP+1210] 0x0                (size_t)
+    [RSP+1218] 0x0                (size_t)
+    [RSP+1220] 0x0                (size_t)
+    [RSP+1228] 0x0                (size_t)
+    [RSP+1230] 0x0                (size_t)
+    [RSP+1238] 0x0                (size_t)
+    [RSP+1240] 0x0                (size_t)
+    [RSP+1248] 0x0                (size_t)
+    [RSP+1250] 0x0                (size_t)
+    [RSP+1258] 0x0                (size_t)
+    [RSP+1260] 0x0                (size_t)
+    [RSP+1268] 0x0                (size_t)
+    [RSP+1270] 0x0                (size_t)
+    [RSP+1278] 0x0                (size_t)
+    [RSP+1280] 0x0                (size_t)
+    [RSP+1288] 0x0                (size_t)
+    [RSP+1290] 0x0                (size_t)
+    [RSP+1298] 0x0                (size_t)
+    [RSP+12A0] 0x0                (size_t)
+    [RSP+12A8] 0x0                (size_t)
+    [RSP+12B0] 0x0                (size_t)
+    [RSP+12B8] 0x0                (size_t)
+    [RSP+12C0] 0x0                (size_t)
+    [RSP+12C8] 0x0                (size_t)
+    [RSP+12D0] 0x0                (size_t)
+    [RSP+12D8] 0x0                (size_t)
+    [RSP+12E0] 0x0                (size_t)
+    [RSP+12E8] 0x0                (size_t)
+    [RSP+12F0] 0x0                (size_t)
+    [RSP+12F8] 0x0                (size_t)
+    [RSP+1300] 0x0                (size_t)
+    [RSP+1308] 0x0                (size_t)
+    [RSP+1310] 0x0                (size_t)
+    [RSP+1318] 0x0                (size_t)
+
+MODULES:
+    _nvngx.dll
+        Address: 0x7FFB8AFE0000
+        SHA: D83C669C5A66E0ED51AD88C37450A04FE810E44CC5B3150D20A783B5AFB1A87C31C4C9532BF722DB0D5B78A01E53E970B684E80B10583F2028D3CA95BF7E2D09
+        Version: v32.0.15.9144
+    ADVAPI32.dll
+        Address: 0x7FFC42930000
+        SHA: 8C1CE3179F6878336BB8BEE85F626990B06EAFB69E25A7FAC2D9A458E958F4BCB6F6BD83BFEF43F5E4452740CCF7D703375639F0CBD37362B83842C380F197EC
+        Version: v10.0.22621.6133
+    amsi.dll
+        Address: 0x7FFC25740000
+        SHA: 4CFABD93F9704F6D560C2D5236927C1372F8E341B039BC9FDF8A0A06F7EFEC664ADCDC73CE5010A2ADA2994D12D6A8D679CBBD8075352FF0741AB42E1D1CD2D1
+        Version: v10.0.22621.3527
+    AUDIOSES.DLL
+        Address: 0x7FFC33F90000
+        SHA: D6FDA2CD57545BA915D066B60438C720F14433DBEE412BA66DD0F3B50E80AD84B57AE08B7E132A2A5BF610804F2B092400EB92EDF52D3188DE85D13B79A98354
+        Version: v10.0.22621.6133
+    bcrypt.dll
+        Address: 0x7FFC40180000
+        SHA: FCA82D2A0034F24DA7D6771A9019747614A2F9BBBAC8212B39D22C9654F4E4052958E20E755B96F591692E807784F2BB9D612F0741E1B376A2C9ABF877BEF89B
+        Version: v10.0.22621.6133
+    bcryptPrimitives.dll
+        Address: 0x7FFC404E0000
+        SHA: 53EE624AA4F3EBA079AB163880E6BF030DC20B3EAE926DB87FAE8462F3C5BA6BA06120DD337EA8C138B55966C582A50D34C02E02590669B3329D6219CB1947FE
+        Version: v10.0.22621.4317
+    bink2w64.dll
+        Address: 0x7FFB8AD40000
+        SHA: 61AB61B895332AE98F5491D07975E5D6A1E42747DE1AE292298CB008AB63AB410F8A7684DB7DDA694EBCC351783D68EDB167B4EEEAB74DBEC6C1BB238E62BEED
+        Version: v2023.2.0
+    CFGMGR32.dll
+        Address: 0x7FFC3FAB0000
+        SHA: 49888965143C96F2F210B95D16BAD1C039C0470340D8F908EDA6F693929DBBA1E66269B951D402F395185C8EB989E21B28F14244322A5FFDB459B39E462D2EDA
+        Version: v10.0.22621.2506
+    clbcatq.dll
+        Address: 0x7FFC41330000
+        SHA: F82356DD39C9D04C82ADE46F9544B21ED07610ABF9DFB39C5531BCF7C86A144157502A75CEFA15CC82FC8FF9B0FC25CF9EF4EA96BC01C5E12F8D561FACA4BA75
+        Version: v2001.12.10941.16384
+    combase.dll
+        Address: 0x7FFC40860000
+        SHA: 19C3AA5FBA1EB1542A6D3B4EBE567A7AA603F539D98056D6FD90E06C776CF1ADEE0EF2480FD94792C36310DA131289CDC7D1D3ED01D8BF27AFE934C65E4004F1
+        Version: v10.0.22621.6133
+    CONCRT140.dll
+        Address: 0x7FFB8D4E0000
+        SHA: B5EE14A9A78B0B3DCFE57BEB1CF290F1BF3EE8C385334DF8AC0C76F0C3A85B47587E61BE320E7F0CD7BE9B1DB6E1EFF239DA724730DF92A303496881E1CB3FF6
+        Version: v14.44.35208
+    CoreMessaging.dll
+        Address: 0x7FFC3BC50000
+        SHA: A158EE66A0A633CFB02551AC67881FDE41E726261C3F2B8166C683C8CD03C734072085EF6B8F4575D28A23D4AC0ABD63DD262583D200EB5EAE5CBCE2825B74C5
+        Version: v10.0.22621.3672
+    CoreUIComponents.dll
+        Address: 0x7FFC366C0000
+        SHA: 8353334F2A7886E8844F55E2D483676670F61C7D03B2693B544AF3E7A54CA891DF0AF1BCCC667819BC0033F526755EA406D1C539DD25739939F483C89C030D58
+        Version: v10.0.22621.3672
+    CRYPT32.dll
+        Address: 0x7FFC40670000
+        SHA: 2EFD7A50706B75D51FA0A4C6517AB0883D494A3C5BA0C46A89D571C310A43E9D632BEF18A20ABA2E2041D4C101D2A58E19DA7A1E3B4B7014AD494872339D6544
+        Version: v10.0.22621.6133
+    CRYPTBASE.DLL
+        Address: 0x7FFC3F4F0000
+        SHA: BB20B86B3C424DB0156791092017E34835C66CCBDD2EE6C939C86F5627FFEBA351E8D8E7BDDE20332D3068F30EE893F02288B8801B1906B8CBB111BCCA0D24C7
+        Version: v10.0.22621.1
+    cryptnet.dll
+        Address: 0x7FFC38EA0000
+        SHA: 9D956FA294D7778EDBBC4967D16302383E2F4A92905C43BB61CFF8494C1BACBC052A2D8729FA3600C69A8DA37F90EBEAFF0B4115BC0F5F3E0754508BDE18E9DA
+        Version: v10.0.22621.1
+    cryptsp.dll
+        Address: 0x7FFC3F4D0000
+        SHA: B0DE63D441195DF2B7FDEA9DCC4D87968887480AB962F40DF37F2419A74A27062ACE4D8F4823F70FEE5BE329206ADD2C81472A130E300987861CFB65CC786FF5
+        Version: v10.0.22621.3672
+    d3d12.dll
+        Address: 0x7FFBE6DE0000
+        SHA: 9983D31BA6CFC71EE2511491C2F79C95F2BAA5B1616962D220C169103022D213278C7B957F6657E9C573F0BEFC0B7D0AF1D51581AC14310F32799A5ECB1ADA57
+        Version: v10.0.22621.3672
+    D3D12Core.dll
+        Address: 0x7FFB88A70000
+        SHA: B44437ED5E2BCC9ADF44E7458312C0EF0C7B6548231542F31664B9E51DB932DFD40C8F7D17470ED0DA938D73FEE5ADDBD6184B91A66BD0B8EEA0B206137A0388
+        Version: v1.608.2
+    D3DSCache.dll
+        Address: 0x7FFBA95D0000
+        SHA: EEE079C948D8A2E3E6A1F9728632853B970DD219E1246FEC4B5C9F31C0F142AE8A9D266CDD606E2E4A0D73351C6C6F49A5F96D2B6504C9C87F1FC7409935A1A4
+        Version: v10.0.22621.6133
+    dbgcore.DLL
+        Address: 0x7FFC1D050000
+        SHA: 60AAF521309B6B697B5DB66FB6101AEC6DA0B6F59706E2C7622D12339B65393958A35D4CC97B1AD88A4D75D7E30098FAE1F4909FE80340C39104325B7895EA0C
+        Version: v10.0.22621.1
+    dbghelp.dll
+        Address: 0x7FFC382C0000
+        SHA: 4ADA171665E5E4596A02EDE87EAD13A7C4581DA86CAA173629562F0798ABE05F1CA701D526F59ED923203D156BDC284DE007985B3DE1299E8DF9815AE51C357F
+        Version: v10.0.22621.3593
+    dcomp.dll
+        Address: 0x7FFC3B0B0000
+        SHA: 0CF3941BC587B39688DF7D1E31915F487BBB7B66E1FC0AF659D4BD4E5728389CF7952815EC858F1C8957C38C8F1FFA4675052C9EB46601C8E55A95278113CAED
+        Version: v10.0.22621.4249
+    deviceaccess.dll
+        Address: 0x7FFB895D0000
+        SHA: 7B374792607AB1C27653C83C0F6B84BB255C6D885D531C802C37E7B91E381B8A562D95A477FF147F226C17DF1A650F8EFCF326B68A9703EF4E6AD110CA816177
+        Version: v10.0.22621.3672
+    devobj.dll
+        Address: 0x7FFC3FA80000
+        SHA: 5364886DFC402E74153B7EC2987BBC041B615C3AB2FD74EB161B6B49EEDD2F7538D2A56D0B06E99984B3E1B745E9DD04BB90099EB37E4BF31F0006C022630681
+        Version: v10.0.22621.2506
+    dhcpcsvc.DLL
+        Address: 0x7FFC398A0000
+        SHA: 0D2FF4781343BD06D9DF0862195DD9C3EFBA01C16D86978CFCBD9586D8A36A688132EA6E8037E89E57CBEE6BCDD9D7D0BA315361D7F9FE156C1684C9FC455848
+        Version: v10.0.22621.6133
+    dinput8.dll
+        Address: 0x7FFBEF300000
+        SHA: B1F50A3AC4833CE262CEAE40E29F6D02CBD4519A0542522FEB66F3972ED13D0FE146332D3F411D125D21E90601B01E9575A5B25CB2D7ECF570ACFDDBA34DE863
+        Version: v10.0.22621.6133
+    directxdatabasehelper.dll
+        Address: 0x7FFC38090000
+        SHA: B7428E8BC5BAE7595A53E3AC6C874E1E5907B6092C73EC327B7619EB16C628656F46EDE970AC16E1C2E27258B417685781B41B7841491AD7AF1BA146030CDA8B
+        Version: v10.0.22621.3672
+    DNSAPI.dll
+        Address: 0x7FFC3E900000
+        SHA: 3ECAD355359808C62CCFA20A2C1BE678D7FBECBEDD038BA3F13E76ED8E604E5FDA406CEA953D898F73194762B104D7BD176ABE47ED6762A525BCEDDE9DA7DB20
+        Version: v10.0.22621.6133
+    DPAPI.DLL
+        Address: 0x7FFC3FB20000
+        SHA: 2531BC636C0722966C94B8B9DD154800E16AA7C67C6256AA23794A437E215BE56DA3E6AAB61E156839AB4534A7CDFE1E2991934365F24E50FCCDBDCE2176CA90
+        Version: v10.0.22621.1
+    drvstore.dll
+        Address: 0x7FFC38C00000
+        SHA: 73B89EDE6523D7F54607863B776FA8C816659D4A179F93BBBD8315E62D58742862F3D4C586891BDAA56E3DC3780DF9EC4CD0A06D42B7D36C9EDE2492C42405BB
+        Version: v10.0.22621.3958
+    DSOUND.DLL
+        Address: 0x7FFB80620000
+        SHA: AAF8CA5B8C80EF990FBD1DC6A4FF41175A433B3A6547622EC1576B1689E7A322ECCB74E9F279DA61D035494DF3EEAC99BD64CED7CD45DBBFBF21EEFC84E97800
+        Version: v10.0.22621.6133
+    dwmapi.dll
+        Address: 0x7FFC3D760000
+        SHA: 5B802F71731FCF942F2D20EF85C7A83F88E49A3AE7E315D79E8AB8EE949D044266DB806A3C751F11F1291D0C85AA076D8DEA7BCA82C867F6CAC17555342F65BC
+        Version: v10.0.22621.6133
+    dxcore.dll
+        Address: 0x7FFC3D430000
+        SHA: 4C1B12EC44C1B305B192732B34A550C0EA3204C0A1435DEFDA41164EBF623812CFA65C17F264D441B61E57B490323C4D1D921BA5D1228F1477A240F841906F3E
+        Version: v10.0.22621.3958
+    dxgi.dll
+        Address: 0x7FFC3D650000
+        SHA: E751C589041D20B47519DE74331EC89F73F5FFDD0B67248B139503B292633B0689F4A8306244206AC7597F3A371C4B354758929216408A0FB5C8DEA81AB8B47D
+        Version: v10.0.22621.4036
+    fastprox.dll
+        Address: 0x7FFC25E20000
+        SHA: 992E7C66EA1314BF60D1DAD7B9D4899C7B424D9CCD2DE245EDEAB42A102C1E38C4F265F8E52E601E61BC7159C329013C924CFCEC7B14C6A25E7381B5C87CEBD3
+        Version: v10.0.22621.3672
+    fwpuclnt.dll
+        Address: 0x7FFC38D70000
+        SHA: 0D480CDC9B320B701B17E23127A016957409F066E879D2BE31FBB2A0D610D66C4C066BF98375BB7E2BB01237104E61AC5991A6EFB7BFA326F8FE793DABEDC8CD
+        Version: v10.0.22621.6133
+    gameoverlayrenderer64.dll
+        Address: 0x7FFB8B210000
+        SHA: C0E527E113145AEC5403C9B71D653CAB9CA66F237EF593B2D3225A349ACE3973DAA0A6BA1440EA4BDC965D90887BC9AA61C375BE2150893853E42A8E4ADAA3EA
+        Version: v10.26.0.34
+    GDI32.dll
+        Address: 0x7FFC42760000
+        SHA: 64ACC27DFD47368408BC8FC683F66BD9DAD59C7FC79971F515C501465646C4370B792F0696B97493267FA7F85F7BE29F5B67E77BB4BAF5A5F4D67BC3934A125C
+        Version: v10.0.22621.4036
+    gdi32full.dll
+        Address: 0x7FFC401B0000
+        SHA: C979981FC730984CC3B3511AE07ABA9C4A24171617CA9F6F0A4C6B10D50EAECB14360209E1CCF1957730AFEE46AFBFA88B48944B3406D851EF8B1D0EEE66E7F6
+        Version: v10.0.22621.4317
+    gpapi.dll
+        Address: 0x7FFC3F310000
+        SHA: 93C9C09EE978C2AFE25B4397B2D73DBCCF8039BD46D158C493629D912E6FBFFF0C7DC2E44C144FB9157EFE7A6B3BD1BAC17B0373755995677C184429A2850D06
+        Version: v10.0.22621.6133
+    HID.DLL
+        Address: 0x7FFC3E630000
+        SHA: 9E10C2F2137EC58F25E645B4DE81AF9E271D541ABD8DEFCFA6189D02609E0B4BA97544E3FF2917116735840E4A9F35F5C6ED70B9B0042C2FF991BC2171B91D99
+        Version: v10.0.22621.6133
+    iertutil.dll
+        Address: 0x7FFC2FB60000
+        SHA: A9F3CC74F345E923B19D72F88C0CD68B08581AB82E8E28529A858D8324CB67BB304E40A626B557D9EBDA912CA4BD17882F5C9D23DF85D8567BE1AF8B87BE1CD9
+        Version: v11.0.22621.6133
+    imagehlp.dll
+        Address: 0x7FFC42830000
+        SHA: F85AFA9E507F82C34E27325C85238102C0DF17B255D95F4A7B3FE6257C4B2BF3647C74950C9C87D446EFEAAF2200230D980DAD98D9FB3501FC07F3C0469F4874
+        Version: v10.0.22621.1
+    IMM32.dll
+        Address: 0x7FFC42720000
+        SHA: F247393C1AE1D0A0BF01571B26C743A9444F44B0E71C1327447AAF808F8FD0AD3A108708021D0E11AF9E0623D8DF9A5C2C814CBC0E700F6F7504D4D151138D0B
+        Version: v10.0.22621.3374
+    inputhost.dll
+        Address: 0x7FFC260E0000
+        SHA: 14A5BC46FEC090C4E531BA2A560DBA4FD40077DC8915A25A1399E53C9EE9C4477E11A8A14B1DB95488F4879F51539EB677F80EFD6CACB65F09C67F5291C56A7B
+        Version: v10.0.22621.4249
+    IPHLPAPI.DLL
+        Address: 0x7FFC3E890000
+        SHA: F65711439F5C50CD79295CB987757CA203C8AD418A807D5C0BC912E6D62133E89EB3725DF10998D8FE0589A5C9FF8A6E5303029BE0BA6C5935A1ED8C6C1D0E15
+        Version: v10.0.22621.6133
+    kernel.appcore.dll
+        Address: 0x7FFC3EE10000
+        SHA: 64397B1FD0344BE78054711E72DD954503A0E4E3E123C13FD3E5CBB0ABC8779673A3D4A08AEBCDAA7A024AA15DA0BCB38C9A20E3353BBAF2FE4002E20413E58A
+        Version: v10.0.22621.3958
+    KERNEL32.DLL
+        Address: 0x7FFC42040000
+        SHA: 67BC1CFF803C97ACD786BD3693C031D3336D8D6470331A57D463FA5384B8ACC70505750AC8F725EE98059AFDF916F589AD4E1CB636A5C4139CEB5905DAC38A67
+        Version: v10.0.22621.4317
+    KERNELBASE.dll
+        Address: 0x7FFC3FDC0000
+        SHA: 9353B29372632087C2EE93859E0F2D5512898AD50331519B6E64D0C5022348CF2D12EBF9CC4DF2FB93FCAABC147972A982D1CF103105DA1F1450E170413B4969
+        Version: v10.0.22621.4317
+    libxess.dll
+        Address: 0x7FFB3A540000
+        SHA: FF63203BC0DF4975771A13622CB88617D0B90EDA81BC22A1BB21BDEF5E60DE89A959766ADAE453D447449993847BCA211E9FDF32F068F5D4DCD3C1786310833E
+        Version: v1.2.0.13
+    MMDevApi.dll
+        Address: 0x7FFC38830000
+        SHA: 025B359050759834C4AB27336D08A5B9EE0B5049DBDC6E918A500548F074A839AE67264A1F67E1C9819A4F42B2F71E65F8D52092FB5DF7F75DE8B862FA9E40D6
+        Version: v10.0.22621.6133
+    MpOav.dll
+        Address: 0x7FFC24A20000
+        SHA: 84ADAAB6FF0F3F9A514F26DD45D62E26ACD38F3642CDA278CCEF0AFC35B95640F9AFF05ED4C7B0B64AEB5256403882547F6992BECE562E3AC8380CEF744D198D
+        Version: v4.18.25110.5
+    msasn1.dll
+        Address: 0x7FFC3F530000
+        SHA: 8BC051B2C0A9D7ACF7199786F7D7B8F9AD844FBFEAE975EC37446EB39626C9092C149F292FB8F0F8F1383F97E66D7A6E729295AFA2DA5601E32488FF500B6FB1
+        Version: v10.0.22621.2506
+    MSCTF.dll
+        Address: 0x7FFC40BF0000
+        SHA: D011BBC5D1E04E3ADBE28300DF3A4C352AF88033266B65780B9595CD28688D49C850E6F8F17F69E7B407213FE1A255741AC73950C9ED3FA3FFD463A74F97D1B4
+        Version: v10.0.22621.6133
+    msdmo.dll
+        Address: 0x7FFC3CFD0000
+        SHA: F84E214D0AB3CE95B79C8FF0BB0F76A23F616437F593D885DDEA40AF6F6239E7B5DFC67D96626F2FC67959FD4C9E33606D65EA876FEB44131ABFBCCF1FA2A8BC
+        Version: v10.0.22621.1
+    MSVCP140.dll
+        Address: 0x7FFB8AE80000
+        SHA: 7ACDCAA3C4D87BAC44FB98F6784084F20097D70A5DE8FE9978B8047DDFDDF6BDE8519F9AA4E47E3E1790FAF82CB97BC7515BD11357BBF46D04A707FE4C5A0B25
+        Version: v14.44.35208
+    msvcp_win.dll
+        Address: 0x7FFC405D0000
+        SHA: 4646B1C9633FC03E5AB6CB90C977CC3D778E73D8ADE58D019C22CA11A3367B8FAA3A18A4E2F4738A75DF80A5A788F956A2A0C33DFD6B48272674D03899A9F5D2
+        Version: v10.0.22621.3374
+    msvcrt.dll
+        Address: 0x7FFC41EE0000
+        SHA: 0AAA0877CBD1FF9CCDF5CE8466DBC968D17A306384DBF87F9BD2281B585149B0821B67B8CFCDDFB8BA2C4E6B78C5B7C163B31A284DFB90CF4D027D1BBF4BAFBF
+        Version: v7.0.22621.2506
+    MSWSOCK.dll
+        Address: 0x7FFC3F280000
+        SHA: 4854DB2070AA5DECAFF796C2049B2BB725BD4DB63DC6A25FF24B89AB725DD2FC251C0C9D24B75363906101DDC2981AB791467A17465337544F1D7FC1D5A94E22
+        Version: v10.0.22621.6133
+    napinsp.dll
+        Address: 0x7FFBF9950000
+        SHA: 2E4AED6935FB2A52A6793523A91305CCE4B9F40C2DB9A0F82765BF3D36DF1B2D9CBBF4BFCED5537F4C93052241D154FA0940441F680E7F374273F0D0B47CC5A6
+        Version: v10.0.22621.6133
+    ncrypt.dll
+        Address: 0x7FFC3F710000
+        SHA: 6D15C8C7A630C500D77C6D01396C7128250262C2F5946232E95DF9DD981BCE92F909943EEC09C1A69C2C41685C4933562E8BB859654FC7777585CA7C3C9A0DAD
+        Version: v10.0.22621.6133
+    ncryptsslp.dll
+        Address: 0x7FFC23A90000
+        SHA: 71CCF5B407BB5D5EE27A0D13912B39883BB1943629296621D0BA34AE8B9C82A41BD812F18560B2908B0AE4C1E209071D761D6B8C191C10976FB43CCAD811038F
+        Version: v10.0.22621.2506
+    netprofm.dll
+        Address: 0x7FFC3C9A0000
+        SHA: DD71992A74E449B170EC3F0F43845BCE893F2AA98F249F0D1CE5A94941B1BA6E0AB630E23CE34520165868688050EA62A88D653AF380D6AB2E11C66C6779FADA
+        Version: v10.0.22621.6133
+    netutils.dll
+        Address: 0x7FFC3E880000
+        SHA: 5AA288FCFBECD42FAFCB4A487B6BD5DBAECF9DA2E40D822F8158FDD5BDA1E6DC6B823981C0FD612809C883A244AE6E921F06C51F800F1AE9560E80FEBBD8ACE4
+        Version: v10.0.22621.2506
+    nlansp_c.dll
+        Address: 0x7FFBF9910000
+        SHA: 6ED0FA06A93B14332881303FAAB408B57836CAB29753D8F06BB91C34136C2F4CCD6525108DA52FFCFE06AFF8EF60E4561E4E1A530A478EA649450EFC6C8AA5E8
+        Version: v10.0.22621.4249
+    npmproxy.dll
+        Address: 0x7FFC388D0000
+        SHA: 78E57333DB7E243F92B917E7135FE5960E91A1B678D8C5F9B655FB1D90DB8B7AABD751E2F0D753AB86C92929044CBE4DAC47DD3D38AEA3985FA9896D78F1795C
+        Version: v10.0.22621.3527
+    NSI.dll
+        Address: 0x7FFC42790000
+        SHA: F22EA147F31552A36EC647796129C17BE8F61BC2CD40FCFF05B77CB8749C142EE121C5E28ED5432EF235D509E53A3E738EE9CDBCB25D5987EE296EE0CB192059
+        Version: v10.0.22621.1
+    NTASN1.dll
+        Address: 0x7FFC3F6C0000
+        SHA: 203657805FBB142F95915CE0032A3518A165D384E472C6BBD9B97921146E48386A1DF75F9025A77ACC79D06AEEDAEEAC39643B859FE763964315FD97F6FCE874
+        Version: v10.0.22621.1
+    ntdll.dll
+        Address: 0x7FFC42AB0000
+        SHA: C0628B423C2ABCD1EFFE4188783FC6B22255486B93B2BB84F3804482492C00BC8B4F8BB9B4CDD1103CA26295D79AFD1A39AEBA8A43928EDB28233A3EE1B18687
+        Version: v10.0.22621.6133
+    ntmarta.dll
+        Address: 0x7FFC3EF20000
+        SHA: C086490EE7AD1B25884378823E54315D3ADAF9E7EAF0966F4C1407C4D54C2D98486E2034EC6323DC76204058E3D079D69EE518F0946A7893C1C38FF212238BFC
+        Version: v10.0.22621.6133
+    nvapi64.dll
+        Address: 0x7FFC32F80000
+        SHA: D727416B87FD9975D5A4D5F249013F81D05E925066196F3CE63344209771F190383243C6FCAF4D9C562B49C773A6BF244F3B3F4922FFDB54D5B234245EC0E5B1
+        Version: v32.0.15.9144
+    nvcuda.dll
+        Address: 0x7FFB594F0000
+        SHA: E797F6D03F79FC829D2BEBCC99F3B77278B0B2A5FC8D59A33709FDE69A64743E28FE343C1888DEB612AD77EB12BD2F83BD34FCF6D72A005BC04A22BA1D9009D2
+        Version: v32.0.15.9144
+    nvcuda64.dll
+        Address: 0x7FFB351E0000
+        SHA: 4607470BBB7C03E37468736E0D5F2E18F9718BABCF0DCB098AD619876B8B8CEE4A56263E4D4675693F85E7A888C904B20823E16C45C5BB922C1DD33BC8838F7F
+        Version: v32.0.15.9144
+    nvdxgdmal64.dll
+        Address: 0x7FFB898A0000
+        SHA: 97104C69CD650BDBD535126918877489522EF9C67F921FE99B0A83771196E374D381877A5056D0BDB1D91EF195922088CB62DF862F9DBAA15445B5B7084E7E56
+    nvgpucomp64.dll
+        Address: 0x7FFC26850000
+        SHA: FF0F8A3265E1D9E7E7F8CA44CF4FA0EA91969223104E0E7316C11D8D871B0FE263D673453D8B193FC78998AAEBF185D48C3383854D79714F1D254816AE06E630
+        Version: v32.0.15.9144
+    nvldumdx.dll
+        Address: 0x7FFC2D210000
+        SHA: ED7F4859EDB619545E7C8B02298ED26E90EE375FD8E1BBCD2D512E4687742CC2BC4D58192F9C10CED452B7BBC923EDB80976CF54A8B3D9229B4F1C9799F30A03
+        Version: v32.0.15.9144
+    NvMemMapStoragex.dll
+        Address: 0x7FFC24730000
+        SHA: C29748D2EEFA839C54862C7A1C4E1615CD555BA3356F433BCF5380D7505F742A64DD67D4EB26260F0C2547B8DB1EC1DC742B5DA8C0F2D0AD457E43999946243C
+    NvMessageBus.dll
+        Address: 0x7FFC30730000
+        SHA: 84D48FC5303053D010860B74E15CA70F9A6197803E20853E2BCBCDE2D451C25D989A7065218445ED5F6340F8CDB7EF2BBD9713E1B13D4E11ED0605267247CAB3
+    nvngx_dlss.dll
+        Address: 0x7FFB373C0000
+        SHA: 56037EF9ACEA29A074CFBD63D2F4B15325864DAC8F871EDED336D8EE50A4EDE7652212090009420A1A8E2EE4541DB238E17586DD0246FEE3F6A935B140B68BD7
+        Version: v3.5.0
+    nvngx_dlssg.dll
+        Address: 0x7FFB59910000
+        SHA: E7E49E838D14190D80B748ECD6168F58C64421B50EFFA9F930C08F28BF24ADD8D88226E0268B63DB61B80385052BA991AB24626F517F96C99B6B8B8670319751
+        Version: v3.5.0
+    nvppex.dll
+        Address: 0x7FFC11520000
+        SHA: 72181B409D3886E9C2FC52FC3FA63D221D2C66C3430534109A2C58A5FF8C61B40CDFC9B9E5559050BEC9898F6870B68C7DABCAC3683C656CF6633A21AFCAFA7B
+        Version: v32.0.15.9144
+    nvspcap64.dll
+        Address: 0x7FFBC7FC0000
+        SHA: 1297B4362D9F0211AE1D9C55D7EC19BA5B16B2752D49992CBD16DE975DB15A4BA6C9FA0001B708E7510F3F98CA90A6B07E49EE2CA8CD752CE2DBF35C864263E7
+        Version: v11.0.5.420
+    NvTelemetryAPI64.dll
+        Address: 0x7FFC1E4D0000
+        SHA: 1716E491F265E8C0053594F13F130661B91343231B92404BC51F1AC37FB1F39D752680A0D763DEECDD961EF64BC0ADC440CBAE06D7B969870B78BB58FECE2137
+        Version: v19.4.29
+    NvTelemetryBridge64.dll
+        Address: 0x7FFC1DD10000
+        SHA: BCFF21B0755F014BC236C31A0C3B74751E5BD4C94EF6B59E85E660FF86351F848F3CB9D054657977EB3FC43C9AD32EA48B9BF9572F765D26984C3FD335C20B87
+        Version: v19.4.29
+    nvwgf2umx.dll
+        Address: 0x7FFC16280000
+        SHA: 3F57E369D447A36B1091D2881C9728D5EA462884D2FFF39384203E3A7D69F14299CA2CF063C85212CB57739D6D0111BF1E696EF454B86E9A895AAA136D183265
+        Version: v32.0.15.9144
+    ole32.dll
+        Address: 0x7FFC41430000
+        SHA: 4F68EAA30EDE930DB6AEB04D3CA83F8546C48828A36B04A4D2108F2492D9DC3A2230FCE1DC9B7D9E95EDAD39C8B859CAF5D35CCC7F333392E2C25041C91EB1A8
+        Version: v10.0.22621.6133
+    OLEAUT32.dll
+        Address: 0x7FFC42850000
+        SHA: 4E49E803897B110DA04A97275B68A863350C2E6FC2D1242E3AC1856DCA9428C29C1C20A4FC14DDF9880592279DB81E57C376BCD8CA3E13E52871527DEA157861
+        Version: v10.0.22621.3672
+    ondemandconnroutehelper.dll
+        Address: 0x7FFC1D310000
+        SHA: 573325EE426F6172427556AEA69C30046655BF34734E6BF74F58A0A6A4223A9AAC647465B1CCD8005246859E1D8CBF8C02DF24D665FEBE6E59B8DF2D20C075B6
+        Version: v10.0.22621.3527
+    pnrpnsp.dll
+        Address: 0x7FFBF98F0000
+        SHA: 472C3B112C7B70C694801C9FD4CF8493E3205C06682C58B21F06F8A79B4D4DBCA7697B81A1CDCC9088F533B18599D54C5D898FC04ABD8CFC5C69FCD36739AB74
+        Version: v10.0.22621.6133
+    POWRPROF.dll
+        Address: 0x7FFC3F890000
+        SHA: 624CB3D2CCAF9CF7C94AB9B1A5A2AD139E082D0ABDD836CA2A0F92C98B9D87A1EF394FFA1818393B73C90ECADD1FD9F1089DF158859BD005856FBDEB5EEB8B61
+        Version: v10.0.22621.6133
+    profapi.dll
+        Address: 0x7FFC3FCF0000
+        SHA: 11598C7286CACB9FA4AF3A1BD8797675F56FD5C114D9D5744C0B443F097FE27F0EAF85DBD902C5338E6431EDFAF08C557756944D2BAAD5A5053BDF1F045118E6
+        Version: v10.0.22621.4111
+    PSAPI.DLL
+        Address: 0x7FFC42710000
+        SHA: E9F89DE9A1AB74BB4358FB636C389356554C84AF4128BC5834681BBFD897D69B12FE5B1521F3846D65726D4E1C62DD87EBEB7DDD3BB1FA940150F9B5AF19FB17
+        Version: v10.0.22621.1
+    rasadhlp.dll
+        Address: 0x7FFC377D0000
+        SHA: E1E34DF6475CA787D2340A340659854D2144D72BE0856C3262E98E170843E7C26874544ACFA5D186623C1C8DEC70232FC73033416F3E2A9A4076EF0820356681
+        Version: v10.0.22621.1
+    ResampleDmo.DLL
+        Address: 0x7FFB80560000
+        SHA: C6F24BA3BCD0FBE293293BE4166F18CBE9EE1F97CCAF5DBAD7B758D0B7C15FDE1E26155E07A077324B3D06B483337CADC8D2A10A4ACE00ECA69881608D770046
+        Version: v10.0.22621.2506
+    resourcepolicyclient.dll
+        Address: 0x7FFC3D7E0000
+        SHA: 8A7DF98B158FC4E2C52954171182AF32D4867B7AE8FE249D016C4F673A429A526207B77F41AE396B2440402565E77F51BFBFD1ABACD404A89F39C93921DFDDB8
+        Version: v10.0.22621.3527
+    RPCRT4.dll
+        Address: 0x7FFC42440000
+        SHA: A896819F1E5AF2DDED42780C1D372900907D20F7619AE60E35DCF3C7284761CED4DEB3F8D844B7DA445F5C0D211879573981AAA6108D44946F52585D9972AB96
+        Version: v10.0.22621.6133
+    rsaenh.dll
+        Address: 0x7FFC3ED70000
+        SHA: 9F2883635FDE2CF2C616AC7F9E22B574967397403F8E481D82573298DA36C869939D885A34A1192415B4D94E9886072AC8724D07D3782C962F3076944B1C60AD
+        Version: v10.0.22621.1
+    schannel.DLL
+        Address: 0x7FFC3EC70000
+        SHA: 7EE88C90B65ACC5912F26F9606CE44EDF465DDC2F9DD6A619E755ED636E41542C4882357A1C5976F97F93AED43D67E83798C29E8A2D7B6AEDD55AA467738CB59
+        Version: v10.0.22621.6133
+    sechost.dll
+        Address: 0x7FFC41F90000
+        SHA: 80669E8BFBC230CD6DA24175B5D3BD189EFA57F0FDE289AFF780BF9987AB7C077D2BCC88CEA732CCB6E802D3B46FCA545B95BF678438EE1AEFD0A95807901419
+        Version: v10.0.22621.1
+    Secur32.dll
+        Address: 0x7FFC3EBF0000
+        SHA: E296A462AFD8980A9497EF9E1D3EC4F81285D450BF8A8BCC3AC056A39F85B0E12F59653688EBE60E302FA5B8819F4ABACE722C791954D3EA81D85182E85264CA
+        Version: v10.0.22621.1
+    SETUPAPI.dll
+        Address: 0x7FFC40D50000
+        SHA: 4C618C9C7E16D701A03B901AF668E5927E8BAC2CD160D1D072EFCD2EB9DB62ABAA1422A57B19F9896A2E6CD8D64DC8A80BD1FC54302447601CBF94D977C62CCA
+        Version: v10.0.22621.6133
+    sfse_1_15_222.dll
+        Address: 0x7FFB8BFE0000
+        SHA: A46D7E2F16A19142EB7237295C5D62A3F8031030FD19AD86315AA2630852A67C7EADCDD26115F5D008DECC4A6CB2E228F119FC50DAE1CEE4D4A604927CED54CC
+        Version: v0.0.2.18
+    SHCORE.dll
+        Address: 0x7FFC41230000
+        SHA: 87A7B22774FE6B8ED4BB10641B8818F7911E0428A43397D7D46FDEB1883FA0270A734310FC654C1900B1BBC9B0E3F8FD64BD11695A5B1B6436570D81AE439380
+        Version: v10.0.22621.6133
+    SHELL32.dll
+        Address: 0x7FFC415E0000
+        SHA: B70D0F88AE33442EFE4AB8EDBEAE71DE19129053A68ECF98C47A716130AA197D66428692716F3C1BC6740909400DCE9AEFBE7266C24EE09E8E6353507990D747
+        Version: v10.0.22621.4745
+    SHLWAPI.dll
+        Address: 0x7FFC42210000
+        SHA: 4B873283E9046CBBDE2F133728EBD28977D81F8FD9C0618C370362475EF42982EF368AD53225680BF95FDB0AE33FF666EF7B4FB239933FFE3B4832AC12B84C82
+        Version: v10.0.22621.6133
+    sl.common.dll
+        Address: 0x7FFB8B160000
+        SHA: 843457A2F9F0BA83B6C2FEA37FB05F1C52F715C2046232C904DF79B1ED30F3725B967163EBFE5B3F01DAABBD9CAC27799C80DBF8269211F5319FD62F3EEF7B3E
+        Version: v2.2.0
+    sl.dlss.dll
+        Address: 0x7FFB8BEC0000
+        SHA: 54B6D2F71B8D16114AE1A576A37E64683BA91CD8BB8AA379706D5AE21DF4571B6B4126F1085E6E5A2448D7E8B169539642AD5D7A31012C4FDEB9AC38B62ED7B8
+        Version: v2.2.0
+    sl.dlss_g.dll
+        Address: 0x7FFB8AF80000
+        SHA: 97370DF420A6BA860BE92F895ED8B5DE9299E7FF7F7E955BB514A49CE591AA5ACDC1599BF46A93E1F87B6335EA7DCB7111671D9FCD20C9029EE82A1953FF44CF
+        Version: v2.2.0
+    sl.interposer.dll
+        Address: 0x7FFB8ADB0000
+        SHA: 4197A38D36FE41A21B11814B00F17F5BF2AE7F418DC5CCB94A6C097615B87B9C5B530DFA0296CA0580BB5618D0AB43AC02C2E1FC08E07D55B5E8BBFF8DA7160A
+        Version: v2.2.0
+    sl.reflex.dll
+        Address: 0x011FC3A90000
+        SHA: C5DF9877DEDFCC443ECAD9A8EA0F10C5DC8C97C4F6F10A1BEA1831AF6EB27D89C695F67B55E451603A6550EBA084E0CD7B676FE8C56E302324025D9A97ED7FC5
+        Version: v2.2.0
+    srvcli.dll
+        Address: 0x7FFC2FE20000
+        SHA: 8F2FCB418CC0484BD092BB500B36AC2F0AA6435E1F1693C13C44A24E54A1C9F53B4728EFC6E6339F26BE3F781995379A178461C52107B2A1336C74DC9D69F512
+        Version: v10.0.22621.4249
+    SSPICLI.DLL
+        Address: 0x7FFC3F070000
+        SHA: EF56182FD07DDA26E24F26A8D132C8698E5D72FCEA33C55A6A06005BF4D08F8B61A7686F4AAAE94683C2F39B0276D77DC23C7F66436CAA48A573FE673CFB2E13
+        Version: v10.0.22621.3810
+    Starfield.exe
+        Address: 0x7FF635BC0000
+        SHA: 9B9359E3616266000DFF9B8078F96851B51F886290657A3FA070DEC56211799CCAE936121F86F4AD332840C118B8E716FE699D3E94BFA82E585D900ED7BCD5DB
+        Version: v1.15.222
+    steam_api64.dll
+        Address: 0x7FFB97930000
+        SHA: C08DE8C6E331D13DFE868AB340E41552FC49123A9F782A5A63B95795D5D979E68B5A6AB171153978679C0791DC3E3809C883471A05864041CE60B240CCDD4C21
+        Version: v7.40.51.27
+    steamclient64.dll
+        Address: 0x7FFB840B0000
+        SHA: 6DCACF38994E27DF814AA90E051DA6215CE05641A763997C922AFE8B35283D85B6830F31B0521D12C8BF7A9F4E1D431A759F9911045F8D0F433CB11300C2DE75
+        Version: v10.26.0.34
+    textinputframework.dll
+        Address: 0x7FFC32230000
+        SHA: 2D60CDCDD97E9F6EE8615C3DF03C4DD627F1D424CE64400CDEF6C5427770B0C4DDED9C4FD678072964111FBCB58CCBB602B173225AC00F3560A7CAF8B0CE6C75
+        Version: v10.0.22621.4249
+    tier0_s64.dll
+        Address: 0x7FFB81380000
+        SHA: BBE22DE9CC1683BE72DBBD5A475D669A3C0787D4286DD68F8AA1835ED7A0881EB5FF7E122B40AB781279410FFAF03E9913150781AF5C4F8F2FECD878702B7B5D
+        Version: v10.26.0.34
+    trainwreck.dll
+        Address: 0x7FFB8B3C0000
+        SHA: 261801A85D41236E35C820A78E4BC3E775EBF0C19336EF1D518A61DA20429BB30B707181606675C1BC650D678CA0A27DC585DFA35BDDD717EB830459BFF60333
+        Version: v1.4.0
+    twinapi.appcore.dll
+        Address: 0x7FFC31870000
+        SHA: DEA368ACEF65DA08481B055B01B738306803B052CE82295E105AADA6BE87DA5C63166D1E502CF2CA11345CA87DF96E14E23B272A21B6E6333058832F70C45687
+        Version: v10.0.22621.6133
+    ucrtbase.dll
+        Address: 0x7FFC403C0000
+        SHA: 7F0563E814CC4AAF292683403888340BB5D95E6A7BDD35D81EEBBD10BFB8E4E5130D0A626B8FB07FF3CAFAAE4A2698CF7103AABCAE74E5D13449DB482EC49BC9
+        Version: v10.0.22621.3593
+    UMPDC.dll
+        Address: 0x7FFC3F740000
+        SHA: 8981D794A568A6674E504AAAC4FD9C6CC9A04DA5AA7A870E4107D2E157786D6BA51C48C4E177B31C09068D03F28715DE27790EB0DACBA2F3297B7AF3A8A1BF97
+        Version: v10.0.22621.1
+    urlmon.dll
+        Address: 0x7FFC300B0000
+        SHA: 02445BD02531502E30C3FD61BA2B16718D0888050E145C0D020924B90A9DC30B6CC03AFE377669A2ACBE44B1609074A6A0DCF1FA3E48A6F4D1A47552A6166462
+        Version: v11.0.22621.6133
+    user32.dll
+        Address: 0x7FFC42560000
+        SHA: 2980A5C8E88FC5470DEF14B90022990980EB6549E76D17B47421EB114035D31FCAE141BC5677B409439F73A94EE175DFFDFAE91155CE3A0194213D2A658FA820
+        Version: v10.0.22621.6133
+    USERENV.dll
+        Address: 0x7FFC3F370000
+        SHA: BCDBC3F7B06797315E0DDD55EC0E3F39732391C0100D5260D409C8E78379658096D20476C493D67ED4FA2CA2DD51787C1DADDEA228D2E22077DB3D46E25EA11F
+        Version: v10.0.22621.6133
+    usermgrproxy.dll
+        Address: 0x7FFC1FCB0000
+        SHA: ED03B9382036CD329195C938B66A2242859AC28187277C4ADE7D850C161B6C78C53837BC059C9D7855F2A5C6D8931900A0C41D70492E6B4E779532C423AE420A
+        Version: v10.0.22621.3672
+    usvfs_x64.dll
+        Address: 0x7FFBE2EA0000
+        SHA: 34E9203FC1DD71C561682D53B4C041BB08B11F74A985075D773872D8F93CC7D26BF4C110A286CE66956B656B75950C83673A2D18735479C2F99C512CF2567BF9
+    uxtheme.dll
+        Address: 0x7FFC3D330000
+        SHA: C3E92D96D56AC4F1C593AA9EAC940D4CC800C751281F21C05FC9708022609FBB766EA1BFB8E49681F5CD93F27FAC482DA5844F6E7E1429665945768F910CB1CD
+        Version: v10.0.22621.6133
+    VCRUNTIME140.dll
+        Address: 0x7FFBE60C0000
+        SHA: C5AF08391BDB0E1DD5CEFFA6C5910D5E0D135E0265D8400AFD249542C50DBEE98E4EE340E6CBC3C24DBC0B9FE7A0FF6D02497C4C91C1815096B4FC5BE975B116
+        Version: v14.44.35208
+    VCRUNTIME140_1.dll
+        Address: 0x7FFC2DBB0000
+        SHA: 7ABA2037D956930E6C50C089B0E4812E0001182F6D8E9ABC4066833652913002050F8C1BB6C3A4F00488E79408ADCDBEF04649774C909E6C54F781B043D39171
+        Version: v14.44.35208
+    VERSION.dll
+        Address: 0x7FFC39240000
+        SHA: FDB97254817D6793A4C5854A4CFA53DDED1B25E578167C2AB9A8EEC67396F4CBC825ACBF61D915B57998C415F9A00F1AE2C40536C53EA45D4037B64F3E1343D7
+        Version: v10.0.22621.1
+    vstdlib_s64.dll
+        Address: 0x7FFB812B0000
+        SHA: 2FFDE4CA35A628DA9D48CF4A232094C59725A58C33E8D065E09FABF2E731CFEEEED8E93A8D58D9B19840B9C4959D4C5664816E7313DBD9F29CF2DB443DB8E26C
+        Version: v10.26.0.34
+    vulkan-1.dll
+        Address: 0x7FFB89940000
+        SHA: 5BD0C0063284DFF3432E1B4B3DC010DEED334E007E848A00997B58FAC948F37814A4FF6C3BFC7541E79995D615D9D99DF2DC150E7A606FFE0096D008C392871D
+        Version: v1.4.321
+    wbemcomn.dll
+        Address: 0x7FFC31210000
+        SHA: 2FF9B8EC7D0F3A167084E4AE0FCC936008BD7D6690B59F601D75E5C328ADDDC67496461A53F8B4BDA755CAEFEAA77E4038AF7CF93DA135590C6C37A9F52DD055
+        Version: v10.0.22621.2506
+    wbemprox.dll
+        Address: 0x7FFC2BDF0000
+        SHA: 0EF373EAF240CE872BEF5FF7BF88C3199AD92DF701DD8CAB3E6E8C6480A22CC9FD522E487AA651F45D714C48B1E54608AE143ECF356801D50F4F264D404F1B36
+        Version: v10.0.22621.3672
+    wbemsvc.dll
+        Address: 0x7FFC37FF0000
+        SHA: C0C9CD1006C4FA0C62EC0845D84438E5B1D1D82B3A2DC99CB3858375E4C2380F6A3B78F852CCD811F1A50A2EB28E4FE3FAB0F0C5342A9470E8B61DD589271611
+        Version: v10.0.22621.3672
+    webio.dll
+        Address: 0x7FFC32B50000
+        SHA: 4E341938D59C47BEECEACB63F11295ACAF947685404C6F1BFB6185147088C22BEDC24AF4CD3CCA5E102C34788FC8D0ACEC14181BC562E379BA2B2D5BA56A2C3D
+        Version: v10.0.22621.6133
+    win32u.dll
+        Address: 0x7FFC40390000
+        SHA: D04E5DD324C7F06010057D92455E29DCC746F322617E0EBB39B9B47150917388AE495422D0BB34290F68849D072F50E4285338C11191E93461B627B32F4F115E
+        Version: v10.0.22621.4317
+    Windows.Gaming.Input.dll
+        Address: 0x7FFC31B20000
+        SHA: 7D3DB945ADF8E0BC825BDA2AD7C540ECE7CD8948BB9FA48A10913BD46A252D73CE5C3DAF6998700261769E2E2ADA346911F5A2E67CC9849CCA2BF2D57BA6E2BC
+        Version: v10.0.22621.1
+    windows.storage.dll
+        Address: 0x7FFC3DD30000
+        SHA: B63C6CC90FBDA270F8786CD41AC55F34E3BB19D489CBB50F9B5DACCCB689F7E83FB0B86260D1C052D83BA2A1C4E66AA702E4685BAA3EDCC5BB6F5D1B904F9D3A
+        Version: v10.0.22621.6133
+    Windows.System.UserDeviceAssociation.dll
+        Address: 0x012C4CC90000
+        SHA: F398AB9539C00134837E42B7958D76E639B8438F91E3E3D84CA125DF02F6F8E11BC6A545179D31BD1E76EB70FACE6450808A7CE0C6CAA7978419A0E6268F5B97
+        Version: v10.0.22621.3527
+    Windows.UI.dll
+        Address: 0x7FFC24E70000
+        SHA: 9C12FCDCF47FE519D24D0A41B3DF53BF1B20803AF8C17FA30FC4C487EE77BFD82770FACC158611F14FB9085A44D2B8ABCA0C0089E4187E4B577AC44D9A591B47
+        Version: v10.0.22621.1
+    WINHTTP.dll
+        Address: 0x7FFC39970000
+        SHA: 5EEFCDF4D6E1BEB18445BC55F8F25969F4677B478C277582C5AAEC65947A59168A0809026B70EFE7638B2C272C7BDF521E451187173DC0507B3C685FDFD49E10
+        Version: v10.0.22621.6133
+    WININET.dll
+        Address: 0x7FFC31350000
+        SHA: F4EDEE1342262DD4048EC0BC85ADA44A741F46D29225F57AF3099D8F0D01C324F260F6446C612BE03CA03186CAE28F27ABB4F95F9717A7EBF38B5C14CDD1BF22
+        Version: v11.0.22621.6133
+    WINMM.dll
+        Address: 0x7FFC35310000
+        SHA: 2CA4529EF3D9A4DA754A42E2014F6957A761305C501AA31E4907B9A1FEF503BC3E4BA6942BF80F212228942B0E5DF5024BF67571F55C8D9E21769532D75B8C02
+        Version: v10.0.22621.6133
+    winmmbase.dll
+        Address: 0x7FFC387B0000
+        SHA: 9AA1B67EE51054D7CB09B3F574BC50CF072E3559D0779C894C55253E16E16AB4966D46BA5F2B3297F8693B308511D41F11A867BE5178C03269E74DF6ACFA3215
+        Version: v10.0.22621.1
+    WINNSI.DLL
+        Address: 0x7FFC3D2C0000
+        SHA: B4032A92D43AFEDF8C97B29519366DC0046BD804359BE616C4B844903F67A0D11C0DA42970FCE7D35772AFAEE5AFA8251EBBA5C2BEB0B9ABCED405927CB53775
+        Version: v10.0.22621.1
+    winrnr.dll
+        Address: 0x7FFBF8FD0000
+        SHA: 9418D0135EC807E73EA6D33F2A149EF220A0104FBA1F6BF21C2D86498BFA4EA4D35E217C8F14868EBE4779BC6BD587543E8D9B846DA65766E5E0AF83B9FDC7EC
+        Version: v10.0.22621.1
+    wintrust.dll
+        Address: 0x7FFC40560000
+        SHA: EF62820A463CAB689DAA8F59AA5108EF15A9BE158EF4D17B39EB8F50EFB820C739A959AFB65DE9AD91FFAF7884539873F387F48C59A4E9899910128C696B0CC0
+        Version: v10.0.22621.4249
+    wintypes.dll
+        Address: 0x7FFC3DBF0000
+        SHA: 250140684EE603BE5B42BB7EAA35D38301D63F7C3DD86C54E0E2640DBF01083899CAF9FA823DA6E7963BE29C593E50623553F6D1D3FFE6F9F79B851E169335B6
+        Version: v10.0.22621.6133
+    WLDAP32.dll
+        Address: 0x7FFC411D0000
+        SHA: C6433120B9F340200770DA3E30D1D5D62DD7607CE6A992723093391BFB0704093183DF3ABAC92F262112C008A3E7505FC0CBC5CCF25CF1BD894B2FD4DB9E628C
+        Version: v10.0.22621.6133
+    wldp.dll
+        Address: 0x7FFC3F5A0000
+        SHA: C5E79AAC54B327CD708EC35C0F7EE69466DDE0C4411ABB56828698015F4516E1840E751E0498D7299886BB44DAEC87C3EF87AF89C75C0718FBFF2F997AB0FF8A
+        Version: v10.0.22621.6133
+    WS2_32.dll
+        Address: 0x7FFC407E0000
+        SHA: 1319EA1AE10DC1BD0E378E611107071B5A11E51FCB1A2B3EE26CE69D648B334541F795F33ABB6F070D760FE60ADF7962CC6D7C902A37EA5C7797A8DE88270E4B
+        Version: v10.0.22621.6133
+    wshbth.dll
+        Address: 0x7FFC39490000
+        SHA: 1C367472454B9A1A644E6113850D158CDF95294DA9B4E66915A82012FDABD8EE58A46EE2E96B7100D6EFD8CD4A9C5DFF8A8699FCC7C3417B5E4429C47BB68A09
+        Version: v10.0.22621.3958
+    WSOCK32.dll
+        Address: 0x7FFC2DBA0000
+        SHA: D2DDA7DE4D1F4905614AF1244534D9A30407AAFE6DEC400053544050745494925352378ED44D4779268E5F0D502A04D08A02BD6D9BD44AB791F3E6A06BEB01A0
+        Version: v10.0.22621.6133
+    XInput1_4.dll
+        Address: 0x7FFC1D0B0000
+        SHA: 4EEDFEA0C84997494227BDA221FA3605898D5453461A9C274C72F96C2890D6AA74A252BC498472D994C32C86BB68F254E92AB23DF5153377CC721028F517823E
+        Version: v10.0.22621.6133
+
+SCRIPT EXTENDER PLUGINS:
+    sfse_1_15_222.dll v0.0.2.18
+    trainwreck.dll    v1.4.0
